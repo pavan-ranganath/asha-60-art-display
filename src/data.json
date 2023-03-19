@@ -1,0 +1,31 @@
+{
+  "images": [
+    {
+      "name": "India Gate",
+      "location": "New Delhi",
+      "variant": "normal",
+      "creator": {
+        "name": "Entrada Solutions image 1",
+        "avatar": "https://images.unsplash.com/profile-1517619081624-eefbb888a5fc"
+      }
+    },
+    {
+      "name": "Jaipur",
+      "location": "Rajasthan",
+      "variant": "tall",
+      "creator": {
+        "name": "Entrada Solutions image 2",
+        "avatar": "https://images.unsplash.com/profile-1575264175033-c633e4eb7737image"
+      }
+    },
+    {
+      "name": "The Taj Mahal",
+      "location": "Agra",
+      "variant": "big",
+      "creator": {
+        "name": "Entrada Solutions image 3",
+        "avatar": "https://images.unsplash.com/profile-1594356649132-6a669c46e0c4image"
+      }
+    }
+  ]
+}
