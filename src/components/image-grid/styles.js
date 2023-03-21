@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { rgba } from "polished";
 
 export const Grid = styled.div`
-  display: flex;
+  display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
   grid-auto-rows: 200px;
