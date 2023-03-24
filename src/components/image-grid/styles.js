@@ -89,7 +89,10 @@ export const Name = styled.div`
   margin-bottom: 12px;
 `;
 
-export const PhotographerName = styled.div``;
+export const Category = styled.div``;
+
+export const Occassion = styled.div``;
+
 
 export const Location = styled.div`
   font-size: 14px;

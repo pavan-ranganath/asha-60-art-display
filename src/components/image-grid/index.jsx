@@ -11,7 +11,7 @@ import SinglePicture from "./single-picture";
 import { Grid } from "./styles";
 
 // Data
-import data from "../../data.json";
+import data from "../../data1.json";
 
 const ImageGrid = ({ selectedImage, setSelectedImage }) => {
   // helps in preventing the body from scrolling
@@ -31,7 +31,7 @@ const ImageGrid = ({ selectedImage, setSelectedImage }) => {
       <Grid>
         {data.images.map((data, index) => (
           <SinglePicture
-            key={`${data.name}-${index}`}
+            key={`${data.filename}-${index}`}
             isSelected={selectedImage === index}
             index={index}
             setSelectedImage={setSelectedImage}

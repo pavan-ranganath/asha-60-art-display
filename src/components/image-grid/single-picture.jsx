@@ -6,7 +6,8 @@ import {
   Back,
   InfoCard,
   Name,
-  PhotographerName,
+  Category,
+  Occassion,
   Avatar,
   Location,
 } from "./styles";
@@ -43,7 +44,7 @@ const SinglePicture = ({
   isSelected,
   setSelectedImage,
   index,
-  data: { creator, location, name, variant },
+  data: { name, location, occassion, category, filename, variant, action },
 }) => {
   const goBack = () => {
     setSelectedImage(-1);
@@ -69,8 +70,8 @@ const SinglePicture = ({
         </Back>
       )}
       <Image
-        src={images[name]}
-        alt={name}
+        src={images[filename]}
+        alt={filename}
         onClick={() => {
           setSelectedImage(index);
         }}
@@ -87,16 +88,17 @@ const SinglePicture = ({
         >
           <Location>{location}</Location>
           <Name>{name}</Name>
-          <Flex>
-            <Avatar
-              image={
-                !!creator.avatar
-                  ? `${creator.avatar}?q=10&w=50`
-                  : images.avatarFallback
-              }
-            />
-            <PhotographerName>{creator.name}</PhotographerName>
-          </Flex>
+          {/* <Flex> */}
+          <Category>{category}</Category>
+          <Occassion>{occassion}</Occassion>
+          {/* <button onClick={action}>More</button> */}
+          {/* <PhotographerName>{}</PhotographerName> */}
+          {/* </Flex> */}
+          <a style={{
+            position: "absolute",
+            top: "40%",
+            right: "10px",
+          }} target="_blank" href={action} class="button">More</a>
         </InfoCard>
       )}
     </SinglePictureContainer>
